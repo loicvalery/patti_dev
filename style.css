@@ -1,0 +1,225 @@
+/*................Variable*/
+/*..................Basis*/
+/*................Layout*/
+/*..............Helpers*/
+/*......Template Parts*/
+
+/*................Variable*/
+:root{
+	--font: 'Open Sans', sans-serif;
+	--link-color: #323232;
+	--color_font_banner: #ffffff;
+	--h1: 3rem;
+	--h1-padding: 1rem;
+	--h2: 2.5rem;
+	--h3: 1.5rem;
+	--font-size: 1rem;
+	--line-height:1.5rem;
+	--color-primary:#fe7e17;
+}
+
+/*..................Basis*/
+
+body{
+	width: 100vw;
+	margin: auto;
+	font-family: var(--font);
+}
+
+h2{
+	text-align: center;
+	font-size: var(--h2);
+	font-weight: 300;
+	color: #444;
+}
+
+h3{
+	font-size: var(--h3);
+	font-weight: 800;
+}
+
+
+
+/*................Layout*/
+
+
+
+
+
+/*--------------------------header----------------------------*/
+header{
+	position: sticky;
+	top:0;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo_patti{
+	width: auto;
+	height: 30px;
+}
+
+.section_nav{
+	display: flex;
+}
+
+.pannel__nav{
+	margin: 1px;
+}
+
+		.card-nav{
+			display: inline-flex;
+			margin:0 1rem;
+		}
+		
+		.card-nav a{
+		text-decoration: none;
+		color: var(--link-color);
+		}
+
+		.card-nav a:hover{
+		color: var(--color-primary);
+		text-decoration: underline;
+		}
+
+		.card-nav a:focus{
+			color: var(--color-primary);
+		}
+
+/*--------------------------banner----------------------------*/
+
+.section_banner{
+	background-image: url(images/banner.jpg);
+	height: 34rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-banner{
+	color: var(--color_font_banner);
+	font-size: var(--h1);
+	border:1px var(--color_font_banner) solid ;
+	padding: var(--h1-padding);
+		}
+
+
+/*--------------------------about----------------------------*/
+
+.section_about{
+	/*display: flex;
+	justify-content: space-around;
+	width: 80%;*/
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 185px;
+	grid-template-areas: "header header header";
+}
+/*
+.panel__about-1{
+	flex: 1;
+}
+
+.panel__about-2{
+	flex: 2;
+}
+*/
+.panel__about-header{
+	grid-area: header;
+}
+
+		.card-about{
+
+				}
+
+
+/*-----------------------------Team--------------------------*/
+
+.section_team-header, .panel__team{
+	text-align: center;
+}
+.section_team{
+    display: flex;
+}
+
+.section_quote{
+	text-align: center;
+	height: 300px;
+	background-image: url(img/parallax_quote.jpg);
+}
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Filters-------------------------*/
+.section_filters{
+	text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Gallery-------------------------*/
+.section_gallery{
+	width: 100vw;
+	display: grid;
+	grid-template-columns:repeat(7,auto);
+}
+
+.pannel__1{
+	grid-area: 1/1/span 1/span 1;
+}
+.pannel__2{
+	grid-area: 1/2/span 1/span 1;
+}
+.pannel__3{
+	grid-area: 2/1/span 1/span 2;
+}
+.pannel__4{
+	grid-area: 1/3;
+}
+.pannel__5{
+	grid-area: 1/4;
+}
+/*-----------------------------------------------------------*/
+
+/*-----------------------------statistics--------------------------*/
+
+.section_statistics{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Partenaires--------------------------*/
+
+.section_partenaires{
+	background-color: var(--color-primary);
+}
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Contact-------------------------*/
+
+.section_contact{
+    display: flex;
+    justify-content: space-around;
+
+  /*-----------------------------Formulaire--------------------------*/
+
+.section_form{
+	display: flex;
+	flex-direction: column;
+	width:30%;
+}
+/*-----------------------------------------------------------*/
+}
+/*-----------------------------------------------------------*/
+
+
+
+/*..............Helpers*/
+
+
+/*......Template Parts*/
+
