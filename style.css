@@ -7,7 +7,8 @@
 /*................Variable*/
 :root{
 	--font: 'Open Sans', sans-serif;
-	--link-color: #323232;
+	--link-color-nav: #323232;
+	--link-color: #686868;
 	--color_font_banner: #ffffff;
 	--h1: 3rem;
 	--h1-padding: 1rem;
@@ -36,6 +37,11 @@ h2{
 h3{
 	font-size: var(--h3);
 	font-weight: 800;
+}
+
+hr{
+	width: 5%;
+	color:var(--color-primary);
 }
 
 
@@ -76,16 +82,12 @@ header{
 		
 		.card-nav a{
 		text-decoration: none;
-		color: var(--link-color);
+		color: var(--link-color-nav);
 		}
 
-		.card-nav a:hover{
+		.card-nav a:hover,.card-nav a:focus{
 		color: var(--color-primary);
 		text-decoration: underline;
-		}
-
-		.card-nav a:focus{
-			color: var(--color-primary);
 		}
 
 /*--------------------------banner----------------------------*/
@@ -108,6 +110,14 @@ header{
 
 /*--------------------------about----------------------------*/
 
+
+.panel_filters {
+	display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
 .section_about{
 	/*display: flex;
 	justify-content: space-around;
@@ -126,7 +136,7 @@ header{
 	flex: 2;
 }
 */
-.panel__about-header{
+.panel__about-header, hr{
 	grid-area: header;
 }
 
@@ -153,8 +163,23 @@ header{
 
 /*-----------------------------Filters-------------------------*/
 .section_filters{
+	width: 40%;
+	margin: auto;
+}
+
+.section_filters a{
+	color:var(--link-color);
 	text-decoration: none;
 }
+
+.section_filters a:hover, .section_filters a:focus {
+	color:var(--link-color-nav);
+	border: 1px solid var(--color-primary);
+	padding:0.5rem;
+}
+
+
+
 
 
 /*-----------------------------------------------------------*/
