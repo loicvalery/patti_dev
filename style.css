@@ -161,9 +161,9 @@ header{
 
 /*-----------------------------Gallery-------------------------*/
 .section_gallery{
-	width: 100vw;
 	display: grid;
 	grid-template-columns:repeat(7,auto);
+	overflow: hidden;
 }
 
 .pannel__1{
@@ -175,11 +175,26 @@ header{
 .pannel__3{
 	grid-area: 2/1/span 1/span 2;
 }
-.pannel__4{
-	grid-area: 1/3;
+.pannel__4 {
+    grid-area: 1/3/span 2/span 2;
 }
-.pannel__5{
-	grid-area: 1/4;
+.pannel__5 {
+    grid-area: 1/5/span 2/ span 1;
+}
+.pannel__6 {
+    grid-area: 1/6/span 2/ span 2;
+}
+.pannel__7 {
+    grid-area: 3/1/span 1/ span 1;
+}
+.pannel__8 {
+    grid-area: 3/2/span 1/ span 2;
+}
+.pannel__9 {
+    grid-area: 3/4/span 1/ span 1;
+}
+.pannel__10 {
+    grid-area: 3/5/span 1/ span 2;
 }
 /*-----------------------------------------------------------*/
 
