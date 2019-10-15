@@ -17,6 +17,7 @@
 	--font-size: 1rem;
 	--line-height:1.5rem;
 	--color-primary:#fe7e17;
+	--color-social-media:#848484;
 }
 
 /*..................Basis*/
@@ -111,32 +112,12 @@ header{
 /*--------------------------about----------------------------*/
 
 
-.panel_filters {
-	display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-
-}
-
-.section_about{
-	/*display: flex;
-	justify-content: space-around;
-	width: 80%;*/
+.panel__about{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, auto);
 	grid-auto-rows: 185px;
-	grid-template-areas: "header header header";
 }
-/*
-.panel__about-1{
-	flex: 1;
-}
-
-.panel__about-2{
-	flex: 2;
-}
-*/
-.panel__about-header, hr{
+.panel__about-header{
 	grid-area: header;
 }
 
@@ -153,11 +134,27 @@ header{
 .section_team{
     display: flex;
 }
+.section_team hr{
+	width:20%;
+}
 
 .section_quote{
 	text-align: center;
 	height: 300px;
 	background-image: url(img/parallax_quote.jpg);
+}
+
+.card-team{
+	font-weight: 800;
+}
+
+.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
+	font-size: 1rem;
+	padding: 9px;
+	color: var(--color-social-media);
+}
+.fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+	color: var(--color-primary);
 }
 /*-----------------------------------------------------------*/
 
@@ -176,6 +173,13 @@ header{
 	color:var(--link-color-nav);
 	border: 1px solid var(--color-primary);
 	padding:0.5rem;
+}
+
+.panel_filters {
+	display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
 }
 
 
