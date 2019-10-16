@@ -1,6 +1,8 @@
 /*................Variable*/
 /*..................Basis*/
 /*................Layout*/
+/*................Mobile*/
+/*................Desktop*/
 /*..............Helpers*/
 /*......Template Parts*/
 
@@ -25,14 +27,12 @@
 body{
 	max-width: 100vw;
 	font-family: var(--font);
-	display: flex;
-	flex-direction: column; 
 }
 
 section{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	margin-bottom: 3rem;
 }
 
 h2{
@@ -52,14 +52,176 @@ hr{
 	width: 9rem;
 	color:var(--color-primary);
 }
-
+ .panel__team img, .section_gallery img{
+ 	filter:grayscale(1);
+ }
+ .panel__team img:hover, .section_gallery img:hover{
+ 	filter:grayscale(0);
+ }
 
 
 /*................Layout*/
 
+/*--------------------------header----------------------------*/
+.pannel__nav{
+	margin: 1px;
+}
+		.card-nav{
+			display: inline-flex;
+			margin:0 1rem;
+		}
+		
+		.card-nav a{
+		text-decoration: none;
+		color: var(--link-color);
+		}
+
+		.card-nav a:hover,.card-nav a:focus{
+		color: var(--color-primary);
+		text-decoration: underline;
+		}
+
+/*--------------------------banner----------------------------*/
 
 
 
+/*--------------------------about----------------------------*/
+
+
+
+/*-----------------------------Team--------------------------*/
+.section_team{
+	display: flex;
+    justify-content: space-around;
+}
+.section_team-header, .panel__team{
+	text-align: center;
+}
+
+.section_team hr{
+	width:20%;
+}
+
+.card-team{
+	font-weight: 800;
+}
+
+.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
+	font-size: 1rem;
+	padding: 9px;
+	color: var(--color-social-media);
+}
+.fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+	color: var(--color-primary);
+}
+
+.card-team-description{
+	color: var(--font-secondary-color);
+}
+
+
+/*-----------------------------blockquote-------------------------*/
+.section_quote{
+	color:var(--color_font_banner);
+	font-size: 1.875rem;
+	text-align: center;
+	height: 300px;
+	background-image: url(img/parallax_quote.jpg);
+}
+
+/*-----------------------------Filters-------------------------*/
+
+.panel_filters {
+	display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+	padding:0.5rem;
+}
+
+.section_filters a{
+	color:var(--font-secondary-color);
+	text-decoration: none;
+}
+
+.section_filters a:hover, .section_filters a:focus {
+	color:var(--link-color);
+	border: 1px solid var(--color-primary);
+	padding:0.5rem;
+}
+
+
+/*-----------------------------Gallery-------------------------*/
+.section_gallery{
+	overflow: hidden;
+}
+
+/*-----------------------------key figures--------------------------*/
+
+.card-key-figures-number{
+	font-weight: 800;
+	font-size: 3.5rem;
+	margin-bottom: 0rem;
+}
+
+.card-key-figures{
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin-top: 0rem;
+}
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------services--------------------------*/
+.section_services i{
+	font-size: 3.5rem;
+}
+
+.panel__services{
+	border:1px solid var(--link-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem;
+}
+
+.panel__services:hover{
+	border:1px solid var(--color-primary);
+	background-color: var(--color-primary);
+	color: var(--color_font_banner);
+}
+.section_services i:hover{
+	color: var(--color_font_banner);
+}
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------statistics--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Partenaires--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Contact-------------------------*/
+
+
+  /*-----------------------------Formulaire--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Mobile--------------------------*/
+
+@media (max-width: 770px){
+
+section{
+	flex-direction: column;
+	align-items: center;
+}
 
 /*--------------------------header----------------------------*/
 /*header{
@@ -108,10 +270,166 @@ hr{
 
 /*-----------------------------Team--------------------------*/
 
-.section_team-header, .panel__team{
+/*-----------------------------------------------------------*/
+/*-----------------------------blockquote-------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Filters-------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Gallery-------------------------*/
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------key figures--------------------------*/
+.section_key-figures{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.panel__key-figures{
 	text-align: center;
 }
 
+/*-----------------------------------------------------------*/
+
+/*-----------------------------services--------------------------*/
+
+.panel__services{
+	width: 90vw;
+	height: 10rem;
+	flex-direction: column;
+}
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------statistics--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Partenaires--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+/*-----------------------------Contact-------------------------*/
+
+
+  /*-----------------------------Formulaire--------------------------*/
+
+
+/*-----------------------------------------------------------*/
+
+ 
+}
+
+
+
+
+
+
+
+
+
+ /*-----------------------------Desktop--------------------------*/
+@media (min-width: 770px){
+
+/*--------------------------header----------------------------*/
+header{
+	position: sticky;
+	top:0;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo_patti{
+	width: auto;
+	height: 30px;
+}
+
+.section_nav{
+	display: flex;
+}
+
+.pannel__nav{
+	margin: 1px;
+}
+
+		.card-nav{
+			display: inline-flex;
+			margin:0 1rem;
+		}
+		
+		.card-nav a{
+		text-decoration: none;
+		color: var(--link-color-nav);
+		}
+
+		.card-nav a:hover,.card-nav a:focus{
+		color: var(--color-primary);
+		text-decoration: underline;
+		}
+
+/*--------------------------banner----------------------------*/
+
+.section_banner{
+	background-image: url(images/banner.jpg);
+	height: 34rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-banner{
+	color: var(--color_font_banner);
+	font-size: var(--h1);
+	border:1px var(--color_font_banner) solid ;
+	padding: var(--h1-padding);
+		}
+
+
+/*--------------------------about----------------------------*/
+
+
+.panel__about{
+	display: grid;
+	grid-template-columns: repeat(3,2);
+}
+.panel__about-1{
+	grid-area: 1/1/span 1/span 1;
+}
+.panel__about-2{
+	grid-area: 1/2/span 1/span 1;
+}
+.panel__about-3{
+	grid-area: 1/3/span 1/span 1;
+}
+.panel__about-4{
+	grid-area: 2/1/span 1/span 2;
+}
+.panel__about-5{
+	grid-area: 2/3/span 1/span 1;
+}
+
+
+/*-----------------------------Team--------------------------*/
+
+.section_team-header, .panel__team{
+	text-align: center;
+}
+.section_team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .section_team hr{
 	width:20%;
 }
@@ -134,117 +452,110 @@ hr{
 .fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
 	color: var(--color-primary);
 }
-
-.card-team-description{
-	color: var(--font-secondary-color);
-}
-
-/*-----------------------------------------------------------*/
-/*-----------------------------Filters-------------------------*/
-.section_quote{
-	color:var(--color_font_banner);
-	font-size: 1.875rem;
-}
 /*-----------------------------------------------------------*/
 
 /*-----------------------------Filters-------------------------*/
 
-
-.section_filters a{
-	color:var(--font-secondary-color);
-	text-decoration: none;
+.section_filters{
+	width: 40%;
+	margin: auto;
 }
 
-.section_filters a:hover, .section_filters a:focus {
-	color:var(--link-color);
-	border: 1px solid var(--color-primary);
-}
 
-.panel_filters {
-	display: flex;
-    list-style-type: none;
-	justify-content: space-between;
-}
+
+
 
 
 /*-----------------------------------------------------------*/
 
 /*-----------------------------Gallery-------------------------*/
 .section_gallery{
+	display: grid;
+	grid-template-columns:repeat(5,auto);
 	overflow: hidden;
+}
+
+.pannel__1{
+	grid-area: 1/1/span 1/span 1;
+}
+.pannel__2{
+	grid-area: 1/2/span 1/span 1;
+}
+.pannel__3{
+	grid-area: 2/1/span 1/span 2;
+}
+.pannel__4 {
+    grid-area: 1/3/span 2/span 2;
+}
+.pannel__5 {
+    grid-area: 1/5/span 2/ span 1;
+}
+.pannel__6 {
+    grid-area: 1/6/span 2/ span 2;
+}
+.pannel__7 {
+    grid-area: 3/1/span 1/ span 1;
+}
+.pannel__8 {
+    grid-area: 3/2/span 1/ span 2;
+}
+.pannel__9 {
+    grid-area: 3/4/span 1/ span 1;
+}
+.pannel__10 {
+    grid-area: 3/5/span 1/ span 2;
 }
 /*-----------------------------------------------------------*/
 
 /*-----------------------------key figures--------------------------*/
 .section_key-figures{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-around;
 }
 
 .panel__key-figures{
 	text-align: center;
 }
 
-.card-key-figures-number{
-	font-weight: 800;
-	font-size: 3.5rem;
-	margin-bottom: 0rem;
-}
-
-.card-key-figures{
-	font-weight: 300;
-	font-size: 1.5rem;
-	margin-top: 0rem;
-}
-
 /*-----------------------------------------------------------*/
-
 /*-----------------------------services--------------------------*/
-.section_services i{
-	font-size: 3.5rem;
-}
 
+.section_services{
+	display:flex;
+	justify-content: space-around;
+}
 .panel__services{
-	border:1px solid var(--link-color);
-	width: 90vw;
+	width: 15rem;
 	height: 10rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 5rem;
-}
-.panel__services:hover{
-	border:1px solid var(--color-primary);
-	background-color: var(--color-primary);
-	color: var(--color_font_banner);
-}
-.section_services i:hover{
-	color: var(--color_font_banner);
 }
 
 
 /*-----------------------------------------------------------*/
 
-/*-----------------------------statistics--------------------------*/
-
-
-/*-----------------------------------------------------------*/
 
 /*-----------------------------Partenaires--------------------------*/
 
-
+.section_partenaires{
+	background-color: var(--color-primary);
+}
 /*-----------------------------------------------------------*/
 
 /*-----------------------------Contact-------------------------*/
 
-
+.section_contact{
+    display: flex;
+    justify-content: space-around;
+}
   /*-----------------------------Formulaire--------------------------*/
 
-
-/*-----------------------------------------------------------*/
+.section_form{
+	display: flex;
+	flex-direction: column;
+	width:30%;
 }
+/*-----------------------------------------------------------*/
+
+
 /*-----------------------------------------------------------*/
 
 
