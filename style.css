@@ -47,7 +47,12 @@ hr{
 	color:var(--color-primary);
 }
 
-
+ .panel__team img, .section_gallery img{
+ 	filter:grayscale(1);
+ }
+ .panel__team img:hover, .section_gallery img:hover{
+ 	filter:grayscale(0);
+ }
 
 /*................Layout*/
 
